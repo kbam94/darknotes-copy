@@ -1,0 +1,7 @@
+{
+  "name": "DarkNotes",
+  "description": "A polished, mobile-first dark mode notes application with search, sort, and local persistence.",
+  "model": "google/gemma-4-31b-it",
+  "prompt": "Build me a polished mobile-first notes application. Users should be able to create notes with a title and body, edit notes, delete notes, search notes by title or content, and sort notes by newest or oldest. Show a useful empty state when there are no notes. Persist notes in localStorage. Use a dark modern interface designed for phone screens. Use only HTML, CSS, and plain JavaScript.",
+  "generatedAt": "2026-09-25T07:51:35.389Z"
+}

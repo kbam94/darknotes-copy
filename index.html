@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DarkNotes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>DarkNotes</h1>
+            <div class="toolbar">
+                <input type="text" id="searchInput" placeholder="Search notes...">
+                <select id="sortSelect">
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                </select>
+            </div>
+        </header>
+
+        <main id="notesList">
+            <!-- Notes will be injected here -->
+        </main>
+
+        <div id="emptyState" class="hidden">
+            <div class="empty-icon">📝</div>
+            <p>No notes found. Start writing something!</p>
+        </div>
+
+        <button id="fab" class="fab" aria-label="Add Note">+</button>
+
+        <!-- Modal for Adding/Editing -->
+        <div id="noteModal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle">New Note</h2>
+                    <button id="closeModal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="noteTitle" placeholder="Title">
+                    <textarea id="noteBody" placeholder="Start typing..." rows="10"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button id="saveNote" class="btn-primary">Save Note</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
